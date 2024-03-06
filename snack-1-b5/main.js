@@ -59,8 +59,18 @@ let sum = 0;
 
 listZucc.forEach((zucchina) =>{
     console.log(zucchina);
-
     sum = sum + zucchina.peso;
 })
 
 console.log(sum);
+
+
+const palla ={
+    grandezza:10,
+    costo : 2,
+}
+
+console.log(palla);
+
+const newPalla = {...palla, creatore:"Luca"};
+console.log(newPalla);
