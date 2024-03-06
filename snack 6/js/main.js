@@ -34,13 +34,22 @@ const listSquadre = [
     },
 ]
 
-console.log(listSquadre);
-
+//console.log(listSquadre);
+const newListSquadre = []
 listSquadre.forEach((squadra) => {
 
   squadra.puntiFatti= Math.floor((Math.random() * 100) + 1);
   squadra.falliSubiti= Math.floor((Math.random() * 100) + 1);
 
+  const {nome} = squadra;
+  const {falliSubiti} = squadra;
+
+  const newObject = {nome,falliSubiti};
+  //console.log(newObject);
+
+    newListSquadre.push(newObject);
 })
 
-console.log(listSquadre)
+console.log(newListSquadre);
+
+
